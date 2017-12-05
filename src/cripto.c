@@ -7,7 +7,6 @@
 *                                                      *
 ********************************************************/
 #include "cripto.h"
-#include <math.h>
 
 int verificaPrimo(int n){
     int d = 3;

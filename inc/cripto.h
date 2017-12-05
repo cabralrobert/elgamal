@@ -10,6 +10,7 @@
 #define CRIPTO_H_
 
 #include <stdio.h>
+#include <math.h>
 
 int verificaPrimo(int n);
 long long int inverse(int a, int c);
