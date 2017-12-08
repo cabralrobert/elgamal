@@ -2,7 +2,7 @@
 
 ## Compilação
 
-Para a compilação é necessário somente o programa gcc. Em seguida deve-se compilar usando o comando **"make"**, no Makefile existem duas instancias, o de Alice e Bob. Caso a compilação seja para um dos dois especificos use **"make bob"** ou **"make bob"**. Caso queira compilar os para os dois, o padrão **"make"** fara isso.
+Para a compilação é necessário somente o programa gcc. Em seguida deve-se compilar usando o comando **"make"**, no Makefile existem duas instancias, o de Alice e Bob. Caso a compilação seja para um dos dois especificos use **"make alice"** ou **"make bob"**. Caso queira compilar os para os dois, o padrão **"make"** fara isso.
 
 ![Compilação](imgs/1.png)
 
