@@ -12,7 +12,10 @@
 #include <stdio.h>
 #include <math.h>
 
-int verificaPrimo(int n);
+#define TRUE 1
+#define FALSE 0
+
+int verificaPrimo(long long int n);
 long long int inverse(int a, int c);
 int modulo(int a,int b,int n);
 

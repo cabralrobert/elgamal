@@ -8,21 +8,22 @@
 ********************************************************/
 #include "cripto.h"
 
-int verificaPrimo(int n){
+int verificaPrimo(long long int n){
+    int isCousin;
+
+    if (n <= 1 || (n != 2 && n % 2 == 0))
+        isCousin = FALSE;
+    else
+        isCousin = TRUE;
+
     int d = 3;
-    int x = sqrt(n);
-
-    if(n % 2 == 0)
-        return 0;
-
-    while(d <= x){
-        if(n % d == 0){
-            printf("%d * %d = %d", n, n/d, n);
-            return 1;
-        }else{
-            d += 2;
-        }
+    while (isCousin  && d <= n / 2) {
+        if (n % d == 0)
+            isCousin = FALSE;
+        d = d + 2;
     }
+
+    return isCousin;
 }
 
 long long int inverse(int a, int c){
