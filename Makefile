@@ -7,7 +7,7 @@ INC = -Iinc/ -w
 
 bob: folder cripto socket
 	+@echo "Compile: $@"
-	@$(GCC) src/$@.c $(INC) -c -o $(OBJ)/$@.o -lm
+	@$(GCC) src/$@.c $(INC) -D$(MODE) -c -o $(OBJ)/$@.o -lm
 
 	@echo "Linking..."
 	+@$(GCC) -o $(BIN)/appBob $(OBJ)/bob.o $(OBJ)/cripto.o $(OBJ)/socket.o -lm
@@ -15,7 +15,7 @@ bob: folder cripto socket
 
 alice: folder cripto socket
 	+@echo "Compile: $@"
-	@$(GCC) src/$@.c $(INC) -c -o $(OBJ)/$@.o -lm
+	@$(GCC) src/$@.c $(INC) -D$(MODE) -c -o $(OBJ)/$@.o -lm
 
 	@echo "Linking..."
 	+@$(GCC) -o $(BIN)/appAlice $(OBJ)/alice.o $(OBJ)/cripto.o $(OBJ)/socket.o -lm

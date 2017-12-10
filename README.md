@@ -2,7 +2,7 @@
 
 ## Compilação
 
-Para a compilação é necessário somente o programa gcc. Em seguida deve-se compilar usando o comando **"make"**, no Makefile existem duas instancias, o de Alice e Bob. Caso a compilação seja para um dos dois especificos use **"make alice"** ou **"make bob"**. Caso queira compilar os para os dois, o padrão **"make"** fara isso.
+Para a compilação é necessário somente o programa gcc. Em seguida deve-se compilar usando o comando **"make MODE=AUTO/MANUAL"**, no Makefile existem duas instancias, o de Alice e Bob. Caso a compilação seja para um dos dois especificos use **"make MODE=AUTO/MANUAL alice"** ou **"make MODE=AUTO/MANUAL bob"**. Caso queira compilar os para os dois, o padrão **"make MODE=AUTO/MANUAL"** fará isso. Escolha se deseja usar o modo manual ou automatico usando **"make MODE=AUTO"**, para automatico e **"make MODE=MANUAL"** para o modo manual.
 
 ![Compilação](imgs/1.png)
 
